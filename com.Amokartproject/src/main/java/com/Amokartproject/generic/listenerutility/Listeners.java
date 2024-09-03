@@ -35,8 +35,8 @@ public class Listeners extends BaseClass implements ITestListener
 		
 		//perform TypeCasting-WebDriver Type to TakeScreensgot
 		//TakesScreenshot tsref=(TakesScreenshot) driver;
-		TakesScreenshot tsref=(TakesScreenshot) BaseClass.driver_Static;
-		
+		//TakesScreenshot tsref=(TakesScreenshot) BaseClass.driver_Static;
+		TakesScreenshot tsref=(TakesScreenshot) webdriverobj.driver_Static;
 		//call the screenshot method and save in Temp path
 		File temp=tsref.getScreenshotAs(OutputType.FILE);
 		//Create a permanent path ans save it
@@ -57,7 +57,7 @@ public class Listeners extends BaseClass implements ITestListener
 		
 	}
 
-	@Override
+	@Override///////  
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		
 	}

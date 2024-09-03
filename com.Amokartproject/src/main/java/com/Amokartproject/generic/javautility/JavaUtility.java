@@ -5,17 +5,31 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 
+/***
+ * this class contains reusable methods to perform java related operations
+ */
+
 public class JavaUtility {
 
-	public int getRandomNum()
+	/***
+	 * This method generate random method within specified limit
+	 * @param limit
+	 * @return
+	 */
+	public int generateRandomNum(int limit)
 	{
 	Random r=	new Random();
-	int ranDomNumber=r.nextInt(5000);
+	int ranDomNumber=r.nextInt(limit);
 	return ranDomNumber;
 	
 	
 	
 	}
+	
+	/***
+	 * Method to get system date
+	 * @return
+	 */
 	public String getSystemDateYYYYDDMM()
 	{
 		Date dateobj=new Date();
@@ -33,4 +47,15 @@ public class JavaUtility {
 		return reqDate;
 		
 	}
+	
+	/***
+	 * Method to fetch current date and time
+	 * @return
+	 */
+		public String getCurrentTime()
+		{
+			Date date=new Date();
+			SimpleDateFormat sdf=new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+			return sdf.format(date);
+		}
 }

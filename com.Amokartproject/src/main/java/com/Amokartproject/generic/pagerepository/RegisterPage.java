@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class RegisterPage {
 
 	public RegisterPage(WebDriver driver) {
+		//initialize the page
 		PageFactory.initElements(driver, this);
 	}
 
@@ -98,6 +99,9 @@ public class RegisterPage {
 	// Address of country dragdrop
 	@FindBy(name = "country2")
 	private WebElement countryDragdrop;
+	
+	
+	
 
 	/**
 	 * @return the nameTextField

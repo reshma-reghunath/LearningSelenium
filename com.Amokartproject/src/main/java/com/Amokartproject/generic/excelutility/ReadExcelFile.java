@@ -14,9 +14,9 @@ import com.Amokartproject.generic.common.FrameworkConstant;
 
 public class ReadExcelFile implements FrameworkConstant {
 
-	FileInputStream fis;
-	Workbook book;
-	FileOutputStream fos;
+public	FileInputStream fis=null;
+public	Workbook book;
+public	FileOutputStream fos=null;
 
 	public String readdata(String sheet, int row, int column) {
 
@@ -27,7 +27,7 @@ public class ReadExcelFile implements FrameworkConstant {
 			e.printStackTrace();
 		}
 
-		// create the workbook
+		// create the workbook by using workbook factory
 		try {
 			book = WorkbookFactory.create(fis);
 		} catch (EncryptedDocumentException e) {
@@ -39,7 +39,16 @@ public class ReadExcelFile implements FrameworkConstant {
 		// UsingWorkbook go to Sheet.row,column and cell fetch the data
 		String data = book.getSheet(sheet).getRow(row).getCell(column).getStringCellValue();
 
+		// close the workbook
+				try {
+					book.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+		
 		return data;
+		
+		
 	}
 
 	public void writedata(String sheet, int row, int column, String data) {
@@ -94,6 +103,15 @@ public class ReadExcelFile implements FrameworkConstant {
 
 		// UsingWorkbook go to Sheet.row,column and cell fetch the data
 		String data = book.getSheet(sheet).getRow(row).getCell(column).getStringCellValue();
+		
+		// close the workbook
+				try {
+					book.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+		
+		//print the data
 		System.out.println(data);
 
 	}
@@ -125,6 +143,13 @@ public class ReadExcelFile implements FrameworkConstant {
 			String data = book.getSheet(sheet).getRow(i).getCell(column).getStringCellValue();
 
 			System.out.println(data);
+			
+			// close the workbook
+			try {
+				book.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 	}

@@ -17,12 +17,112 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
-public class BaseClass extends ObjectUtulity 
-{
-	public  WebDriver driver=null;
-	public static WebDriver driver_Static;
-	
 
+
+public class BaseClass extends ObjectUtulity {
+	//public WebDriver driver = null;
+	//public WebDriver driver;
+	
+	@BeforeSuite
+	public void getSuiteConnections() {
+		Reporter.log("get SuiteConnections done Successful", true);
+	}
+
+	
+	@BeforeTest
+	public void precondition() {
+		Reporter.log("Pre Condition Successful", true);
+
+	}
+
+	
+	@Parameters("browser")
+	@BeforeClass
+	public void browserSetUp(String browsername) {
+//		// if user gives browsername="chrome"
+//		if (browsername.equals("chrome")) {
+//			// Step1: launch the browser
+//			// System.setProperty("webdriver.chrome.driver",
+//			// "./src/main/resources/chromedriver.exe");
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+//		}
+//
+//		// if user gives browsername="firefox"
+//		else if (browsername.equals("firefox")) {
+//			// Step1: launch the browser-firefox
+//			WebDriverManager.firefoxdriver().setup();
+//			driver = new FirefoxDriver();
+//		}
+//
+//		// if user gives browsername="edge"
+//		else if (browsername.equals("edge")) {
+//			// Step1: launch the browser
+//			WebDriverManager.edgedriver().setup();
+//			driver = new EdgeDriver();
+//		}
+//
+//		else {
+//			System.out.println("u have entered invalid browser name");
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+//		}
+//
+		
+		// create object for all
+		objectCreation();
+		
+		//Step 1:Launch the browser
+		webdriverobj.launchBrowser(browsername);
+		
+		//Step 2: Maximize the browser
+		webdriverobj.maximizeBrowser();
+		
+		
+		// Fetch url data property file
+		String url1 = propertyobj.readdata("url");
+
+//		propertyobj.displaydata("url");
+//		propertyobj.writeData("email", "test@gmail.com");
+
+		// Step3: Navigate to the application using URL
+	   //	driver.get(url1);
+		    webdriverobj.navigateToApp(url1);
+		    
+		Reporter.log("BrowserSetup "+browsername+"successful", true);
+	}
+
+	@BeforeMethod
+	public void Login() {
+		Reporter.log("Login Successful", true);
+
+	}
+
+	@AfterMethod
+	public void Logout() {
+		Reporter.log("Logout Successful", true);
+	}
+
+	
+	@AfterClass
+	public void closebrowser() {
+		// Close the Browser
+		//driver.close();
+		webdriverobj.quitAllWindows();
+		Reporter.log("CloseBrowser Successful", true);
+	}
+
+	
+	@AfterTest
+	public void postcondition() {
+		Reporter.log("Post condition done Successful", true);
+	}
+	
+	@AfterSuite
+	public void terminateSuiteConnections() {
+		Reporter.log("terminate SuiteConnections done Successful", true);
+	}
+	
 	@DataProvider(name = "Register")
 	public Object[][] Registerdata() {
 
@@ -43,84 +143,9 @@ public class BaseClass extends ObjectUtulity
 		return data;
 	}
 
-	@BeforeMethod
-	public void Login() {
-		Reporter.log("Login Successful", true);
+	
 
-	}
+	
 
-	@AfterMethod
-	public void Logout() {
-		Reporter.log("Logout Successful", true);
-	}
-
-	@Parameters("browser")
-	@BeforeClass
-public void browserSetUp(String browser) {
-// bname="chrome";
-		// if user gives browsername="chrome"
-		if (browser.equals("chrome")) {
-			// Step1: launch the browser
-			System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
-			driver = new ChromeDriver();
-		}
-
-		// if user gives browsername="firefox"
-		else if (browser.equals("firefox")) {
-			// Step1: launch the browser-firefox
-			driver = new FirefoxDriver();
-		}
-
-		// if user gives browsername="edge"
-		else if (browser.equals("edge")) {
-			// Step1: launch the browser
-			driver = new EdgeDriver();
-		}
-
-		else {
-			System.out.println("u have entered invalid browser name");
-			driver = new ChromeDriver();
-		}
-
-		// create object for all
-		objectCreation();
-
-		// Fetch data
-		String url1 = propertyobj.readdata("url");
-
-//		propertyobj.displaydata("url");
-//		propertyobj.writeData("email", "test@gmail.com");
-
-		// Step2: Navigate to the application using URL
-		driver.get(url1);
-		Reporter.log("BrowserSetup Successful", true);
-	}
-
-	@AfterClass
-	public void closebrowser() {
-		// Close the Browser
-		driver.close();
-		Reporter.log("CloseBrowser Successful", true);
-	}
-
-	@BeforeTest
-	public void precondition() {
-		Reporter.log("Pre Condition Successful", true);
-
-	}
-
-	@AfterTest
-	public void postcondition() {
-		Reporter.log("Post condition done Successful", true);
-	}
-
-	@BeforeSuite
-	public void getSuiteConnections() {
-		Reporter.log("get SuiteConnections done Successful", true);
-	}
-
-	@AfterSuite
-	public void terminateSuiteConnections() {
-		Reporter.log("terminate SuiteConnections done Successful", true);
-	}
+	
 }

@@ -3,7 +3,9 @@ package com.Amokartproject.logintest;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class loginTest {
+import com.Amokartproject.generic.common.BaseClass;
+
+public class loginTest extends BaseClass{
 	@Test
 	public void login_validData()
 	{

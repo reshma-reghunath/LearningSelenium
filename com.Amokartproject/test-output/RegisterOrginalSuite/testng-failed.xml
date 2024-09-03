@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegisterOrginalSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Amokartproject.registertest.RegisterOriginalTest">
+        <methods>
+          <include name="Login"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteConnections"/>
+          <include name="terminateSuiteConnections"/>
+          <include name="browserSetUp"/>
+          <include name="createUser_validData"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.Amokartproject.registertest.RegisterOriginalTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RegisterOrginalSuite] -->

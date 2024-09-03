@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Amokartproject.registertest.RegisterTest">
+      <class name="com.Amokartproject.registertest.RegisterOriginalTest">
         <methods>
-          <include name="terminateSuiteConnections"/>
-          <include name="Logout"/>
-          <include name="browserSetUp"/>
-          <include name="createUser_invalidData"/>
-          <include name="closebrowser"/>
-          <include name="precondition"/>
           <include name="Login"/>
-          <include name="getSuiteConnections"/>
+          <include name="createUser_invalidData"/>
           <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteConnections"/>
+          <include name="terminateSuiteConnections"/>
+          <include name="browserSetUp"/>
+          <include name="Logout"/>
         </methods>
-      </class> <!-- com.Amokartproject.registertest.RegisterTest -->
+      </class> <!-- com.Amokartproject.registertest.RegisterOriginalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

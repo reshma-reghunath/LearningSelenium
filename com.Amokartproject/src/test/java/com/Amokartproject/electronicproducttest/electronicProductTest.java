@@ -1,25 +1,30 @@
 package com.Amokartproject.electronicproducttest;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class electronicProductTest {
-	@Test
+import com.Amokartproject.generic.common.BaseClass;
+
+
+@Listeners(com.Amokartproject.generic.listenerutility.Listeners.class)
+public class electronicProductTest extends BaseClass {
+	@Test(groups = "FT")
 	public void addProduct()
 	{
-		Reporter.log("addProduct--electronic PRD Successfully", true);
+		Reporter.log("added Product--electronic Successfully", true);
 	}
 	
-	@Test
+	@Test(groups = "IT")
 	public void updateProduct()
 	{
-		Reporter.log("updateProduct --electronic PRD Successfully", true);
+		Reporter.log("updated Product --electronic Successfully", true);
 	}
 	
-	@Test
+	@Test(groups = "ST")
 	public void deleteProduct()
 	{
-		Reporter.log("deleteProduct --electronic PRD Successfully", true);
+		Reporter.log("deleted Product --electronic Successfully", true);
 	}
 
 }

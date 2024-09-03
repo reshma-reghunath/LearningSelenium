@@ -1,0 +1,548 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 14 11:24:17 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>72 seconds (72900 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Amokartproject.producttest.product_commonTest.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.producttest.product_commonTest<br/>
+<a href="#Output-1956598686" onClick='toggleBox("Output-1956598686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1956598686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1956598686">
+updateProduct --common PRD Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.producttest.product_commonTest@44c03695</td></tr>
+<tr>
+<td title='com.Amokartproject.producttest.product_commonTest.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.producttest.product_commonTest<br/>
+<a href="#Output-836972194" onClick='toggleBox("Output-836972194", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-836972194" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-836972194">
+deleteProduct --common PRD Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.producttest.product_commonTest@44c03695</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct8Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct8Test<br/>
+<a href="#Output-1077464378" onClick='toggleBox("Output-1077464378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1077464378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1077464378">
+addProduct--kids PRD 8 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct8Test@385c9627</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct4Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct4Test<br/>
+<a href="#Output-429269396" onClick='toggleBox("Output-429269396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-429269396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-429269396">
+updateProduct --kids PRD 4 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct4Test@217ed35e</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct5Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct5Test<br/>
+<a href="#Output-1357944757" onClick='toggleBox("Output-1357944757", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1357944757" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1357944757">
+updateProduct --kids PRD 5 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct5Test@6743e411</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct8Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct8Test<br/>
+<a href="#Output-2123681939" onClick='toggleBox("Output-2123681939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2123681939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2123681939">
+updateProduct --kids PRD 8  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct8Test@385c9627</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct6Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct6Test<br/>
+<a href="#Output-1775897362" onClick='toggleBox("Output-1775897362", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1775897362" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1775897362">
+addProduct--kids PRD 6 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct6Test@6989da5e</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct2Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct2Test<br/>
+<a href="#Output-1750120280" onClick='toggleBox("Output-1750120280", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1750120280" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1750120280">
+updateProduct --kids PRD 2 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct2Test@7dcf94f8</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct8Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct8Test<br/>
+<a href="#Output-1446676917" onClick='toggleBox("Output-1446676917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1446676917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1446676917">
+deleteProduct --kids PRD 8  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct8Test@385c9627</td></tr>
+<tr>
+<td title='com.Amokartproject.electronicproducttest.electronicProductTest.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.electronicproducttest.electronicProductTest<br/>
+<a href="#Output-1677976140" onClick='toggleBox("Output-1677976140", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1677976140" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677976140">
+added Product--electronic Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.electronicproducttest.electronicProductTest@229f66ed</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct7Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct7Test<br/>
+<a href="#Output-80052821" onClick='toggleBox("Output-80052821", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-80052821" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-80052821">
+addProduct--kids PRD 7  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct7Test@31190526</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct3Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct3Test<br/>
+<a href="#Output-2051397396" onClick='toggleBox("Output-2051397396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2051397396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2051397396">
+deleteProduct --kids PRD 3 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct3Test@3eb25e1a</td></tr>
+<tr>
+<td title='com.Amokartproject.electronicproducttest.electronicProductTest.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.electronicproducttest.electronicProductTest<br/>
+<a href="#Output-653553574" onClick='toggleBox("Output-653553574", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-653553574" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-653553574">
+updated Product --electronic Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.electronicproducttest.electronicProductTest@229f66ed</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct7Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct7Test<br/>
+<a href="#Output-1406114969" onClick='toggleBox("Output-1406114969", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1406114969" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1406114969">
+deleteProduct --kids PRD 7  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct7Test@31190526</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct6Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct6Test<br/>
+<a href="#Output-1794068152" onClick='toggleBox("Output-1794068152", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1794068152" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1794068152">
+updateProduct --kids  PRD 6 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct6Test@6989da5e</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct7Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct7Test<br/>
+<a href="#Output-154449199" onClick='toggleBox("Output-154449199", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-154449199" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-154449199">
+updateProduct --kids  PRD  7 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct7Test@31190526</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct2Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct2Test<br/>
+<a href="#Output-277497558" onClick='toggleBox("Output-277497558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-277497558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-277497558">
+deleteProduct --kids PRD  2 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct2Test@7dcf94f8</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct1Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct1Test<br/>
+<a href="#Output-1526453607" onClick='toggleBox("Output-1526453607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526453607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526453607">
+updateProduct --kids PRD 1 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct1Test@f5958c9</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct3Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct3Test<br/>
+<a href="#Output-1263461649" onClick='toggleBox("Output-1263461649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1263461649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1263461649">
+updateProduct --kids PRD 3 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct3Test@3eb25e1a</td></tr>
+<tr>
+<td title='com.Amokartproject.producttest.product_commonTest.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.producttest.product_commonTest<br/>
+<a href="#Output-1859823482" onClick='toggleBox("Output-1859823482", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1859823482" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1859823482">
+addProduct--common PRD Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.producttest.product_commonTest@44c03695</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct4Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct4Test<br/>
+<a href="#Output-9054826" onClick='toggleBox("Output-9054826", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9054826" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9054826">
+deleteProduct --kids PRD 4 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct4Test@217ed35e</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct5Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct5Test<br/>
+<a href="#Output-130211746" onClick='toggleBox("Output-130211746", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-130211746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-130211746">
+addProduct--kids PRD 5 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct5Test@6743e411</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct5Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct5Test<br/>
+<a href="#Output-1506703662" onClick='toggleBox("Output-1506703662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1506703662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1506703662">
+deleteProduct --kids PRD 5 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct5Test@6743e411</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct1Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct1Test<br/>
+<a href="#Output-846072718" onClick='toggleBox("Output-846072718", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-846072718" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-846072718">
+deleteProduct --kids PRD 1 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct1Test@f5958c9</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct6Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct6Test<br/>
+<a href="#Output-1082886058" onClick='toggleBox("Output-1082886058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1082886058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1082886058">
+deleteProduct --kids PRD 6 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct6Test@6989da5e</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct1Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct1Test<br/>
+<a href="#Output-1032908467" onClick='toggleBox("Output-1032908467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1032908467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1032908467">
+addProduct--kids PRD 1 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct1Test@f5958c9</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct2Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct2Test<br/>
+<a href="#Output-1192603187" onClick='toggleBox("Output-1192603187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1192603187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1192603187">
+addProduct--kids PRD 2 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct2Test@7dcf94f8</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct9Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct9Test<br/>
+<a href="#Output-1405548909" onClick='toggleBox("Output-1405548909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1405548909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1405548909">
+updateProduct --kids PRD 9  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct9Test@662ac478</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct3Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct3Test<br/>
+<a href="#Output-1501888239" onClick='toggleBox("Output-1501888239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1501888239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1501888239">
+addProduct--kids PRD 3 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct3Test@3eb25e1a</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct4Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct4Test<br/>
+<a href="#Output-1818453711" onClick='toggleBox("Output-1818453711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1818453711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1818453711">
+addProduct--kids PRD 4 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct4Test@217ed35e</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct9Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct9Test<br/>
+<a href="#Output-1277882374" onClick='toggleBox("Output-1277882374", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1277882374" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1277882374">
+addProduct--kids PRD  9 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct9Test@662ac478</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct10Test.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct10Test<br/>
+<a href="#Output-1886301021" onClick='toggleBox("Output-1886301021", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1886301021" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1886301021">
+addProduct--kids PRD 10 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct10Test@682b2fa</td></tr>
+<tr>
+<td title='com.Amokartproject.electronicproducttest.electronicProductTest.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.electronicproducttest.electronicProductTest<br/>
+<a href="#Output-1987707214" onClick='toggleBox("Output-1987707214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1987707214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1987707214">
+deleted Product --electronic Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.electronicproducttest.electronicProductTest@229f66ed</td></tr>
+<tr>
+<td title='com.Amokartproject.makeupproducttest.makeupProductTest.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.makeupproducttest.makeupProductTest<br/>
+<a href="#Output-133987402" onClick='toggleBox("Output-133987402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-133987402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-133987402">
+deleteProduct --eyelinner PRD Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.makeupproducttest.makeupProductTest@139982de</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct9Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct9Test<br/>
+<a href="#Output-1433976386" onClick='toggleBox("Output-1433976386", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1433976386" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1433976386">
+deleteProduct --kids PRD  9 Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct9Test@662ac478</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct10Test.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct10Test<br/>
+<a href="#Output-715534618" onClick='toggleBox("Output-715534618", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-715534618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-715534618">
+updateProduct --kids PRD 10  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct10Test@682b2fa</td></tr>
+<tr>
+<td title='com.Amokartproject.makeupproducttest.makeupProductTest.updateProduct()'><b>updateProduct</b><br>Test class: com.Amokartproject.makeupproducttest.makeupProductTest<br/>
+<a href="#Output-1649026294" onClick='toggleBox("Output-1649026294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1649026294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1649026294">
+updateProduct --lipstick PRD Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.makeupproducttest.makeupProductTest@139982de</td></tr>
+<tr>
+<td title='com.Amokartproject.makeupproducttest.makeupProductTest.addProduct()'><b>addProduct</b><br>Test class: com.Amokartproject.makeupproducttest.makeupProductTest<br/>
+<a href="#Output-409778321" onClick='toggleBox("Output-409778321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-409778321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-409778321">
+addProduct--foundation PRD Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.makeupproducttest.makeupProductTest@139982de</td></tr>
+<tr>
+<td title='com.Amokartproject.kidsproducttest.kidsProduct10Test.deleteProduct()'><b>deleteProduct</b><br>Test class: com.Amokartproject.kidsproducttest.kidsProduct10Test<br/>
+<a href="#Output-1066561773" onClick='toggleBox("Output-1066561773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1066561773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1066561773">
+deleteProduct --kids PRD 10  Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.Amokartproject.kidsproducttest.kidsProduct10Test@682b2fa</td></tr>
+</table><p>
+</body>
+</html>
